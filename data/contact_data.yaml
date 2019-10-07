@@ -5,6 +5,4 @@ test_add_connect:
  test_add_connect_002:
    name: "lisi"
    phone: "199999999"
- test_add_connect_003:
-   name: "wangwu"
-   phone: "10000000000"
+

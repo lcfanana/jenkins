@@ -5,7 +5,7 @@ import yaml
 from base.base_analyze import analyze_file
 from base.driver import init_rivder
 from page.page import Page
-import allure
+
 
 
 
@@ -18,7 +18,7 @@ class TestConnect:
         time.sleep(3)
         self.driver.quit()
 
-    # @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
+    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
     @pytest.mark.parametrize("args",analyze_file("contact_data.yaml","test_add_connect"))
     def test_add_connect(self,args):
         name = args["name"]
