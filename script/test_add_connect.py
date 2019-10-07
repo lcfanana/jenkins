@@ -1,6 +1,7 @@
 import time
 import pytest
 import yaml
+import allure
 
 from base.base_analyze import analyze_file
 from base.driver import init_rivder
