@@ -20,7 +20,7 @@ class TestConnect:
         self.driver.quit()
 
     @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
-    @pytest.mark.parametrize("args",analyze_file("contact_data.yaml","test_add_connect"))
+    # @pytest.mark.parametrize("args",analyze_file("contact_data.yaml","test_add_connect"))
     def test_add_connect(self,args):
         name = args["name"]
         phone=args["phone"]
